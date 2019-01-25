@@ -23,6 +23,7 @@ router.get('/', (req, res) => {
 
 // Use our router configuration when we call /api
 app.use('/api', router);
+// another difference
 
 app.listen(API_PORT, () => console.log(`Listening on port ${API_PORT}`));
 mongoose.connect(dbURI,{ useNewUrlParser: true });
